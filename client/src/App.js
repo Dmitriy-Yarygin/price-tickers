@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import Display from './components/Display'
+import Settings from './components/Settings'
+import PriceTickersTable from './components/PriceTickersTable'
+import useStyles from './AppStyles'
 
 function App() {
+  const classes = useStyles()
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={classes.app}>
+      <div className={classes.wrapper}>
+        <h1 className={classes.header}>
+          Display price tickers data on the UI in realtime
+        </h1>
+        <Display />
+        <PriceTickersTable />
+        <Settings />
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
