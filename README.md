@@ -4,16 +4,17 @@
 ## Changes
 
 ### Backend:
-- splited functionality on separate files
-- prise changes counts on previous data basis
-- accepts interval time from client
+- functionality has been split into separate files
+- prices changes are now calculated based on previous data
+- data update interval is now set by the client
 
 ### Frontend
-- added visual effects to highlight positive or negative changes in the prices (arrows change color and direction, numbers rotate and change color)
-- user can add/remove tickers from showing in Display (every row in TickersTable has add/remove button in _Track_ column, also every Ticker in Display has close button)
-- added prices charts (expand buttons in the TickersTable first column toggle showing/hiding charts)
+- added visual effects to highlight changes in the prices: arrows change color and direction, numbers rotate and change color
+- every row in __TickersTable__ has add/remove button in __Track__ column so user can add/remove tickers from showing in __Display__
+- every __Ticker__ in __Display__ has close button so user can remove the tickers from showing in __Display__
+- charts can be shown/hidden with expand buttons in the __TickersTable__ first column
 - settings allow user to specify prices renew interval
-- added reducers tests
+- added reducers tests 
 
 ![alt text](screenshots/1.png "Tickers demo screenshot")
 
